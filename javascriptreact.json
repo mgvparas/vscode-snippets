@@ -1,0 +1,32 @@
+{	
+	"functionComponent": {
+		"prefix": "funccomp",
+		"body": "import React from 'react';\n\nconst ${1:${TM_FILENAME_BASE}} = (props) => (\n\t<div className='${2:CLASS_NAME}'>\n\t\t$0\n\t</div>\n);",
+		"description": "Creates a React functional component"
+	},
+	"classComponent": {
+		"prefix": "clcomp",
+		"body": "import React, { Component } from 'react';\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div className='${2:CLASS_NAME}'>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+		"description": "Creates a React class component"
+	},
+	"componentPropTypes": {
+		"prefix": "propt",
+		"body": "${1:${TM_FILENAME_BASE}}.propTypes = {\n\t//Required Props\n\t$0\n\n\t//Optional Props\n\t\n};",
+		"description": "Creates section for defining React component prop types"
+	},
+	"constructor": {
+		"prefix": "ctor",
+		"body": "constructor {\n\t$0\n}",
+		"description": "Creates an empty constructor"
+	},
+	"exportDefault": {
+		"prefix": "expd",
+		"body": "export default ${1:${TM_FILENAME_BASE}};",
+		"description": "Creates an empty constructor"
+	},
+	"reduxComponent": {
+		"prefix": "rdxcomp",
+		"body": "import React, { Component } from 'react';\nimport { connect } from 'react-redux';\n\nfunction mapStateToProps(state) {\n\treturn {\n\n\t};\n}\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div className='${2:CLASS_NAME}'>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default connect(\n\tmapStateToProps,\n)(${1:${TM_FILENAME_BASE}});",
+		"description": "Creates a React functional component connected to redux"
+	}
+}

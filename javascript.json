@@ -1,0 +1,17 @@
+{
+	"arrowFunction": {
+		"prefix": "arrfunc",
+		"body": "const ${1:${TM_FILENAME_BASE}} = (${2:ARGS}) => {\n\treturn $0\n}",
+		"description": "Creates an empty constructor"
+	},
+	"constructor": {
+		"prefix": "ctor",
+		"body": "constructor {\n\t$0\n}",
+		"description": "Creates an empty constructor"
+	},
+	"exportDefault": {
+		"prefix": "expd",
+		"body": "export default ${1:${TM_FILENAME_BASE}};",
+		"description": "Creates an empty constructor"
+	}
+}
